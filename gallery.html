@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <style>
+        /* gallery.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 5px solid #1c1f4c;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #1c1f4c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>BMW Gallery</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <img src="C:\Users\HP\Downloads\OIP.jpg" alt="BMW Aftersales">
+            <img src="C:\Users\HP\Downloads\1185214-car-cars-1920x1200-BMW-BMW-E90-BMW-3-Series-1080P.jpg" alt="BMW E90">
+            <img src="C:\Users\HP\Downloads\bmw.jpg" alt="Classic BMW">
+            <img src="C:\Users\HP\Downloads\BMW-14.jpg" alt="BMW 14">
+            <img src="C:\Users\HP\Downloads\new-BMW-S1000RR-.jpg" alt="street bike">
+            <img src="C:\Users\HP\Downloads\829ac4959d6f7ada09357177751bda8d.jpg" alt="BMW X5">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BMW. Innovation Meets Performance.</p>
+    </footer>
+</body>
+</html>
